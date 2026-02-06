@@ -1,0 +1,3 @@
+﻿using MultiThreadApp;
+
+DivideConquer.Run();

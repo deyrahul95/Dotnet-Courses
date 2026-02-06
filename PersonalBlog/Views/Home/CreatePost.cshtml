@@ -1,0 +1,71 @@
+@model Post
+@{
+    ViewData["Title"] = "Create Post";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <div class="card shadow-sm border-0 rounded-4 p-4">
+
+                <h2 class="fw-bold mb-4">Create New Post</h2>
+
+                <form asp-controller="Home" asp-action="Post" method="post" novalidate id="postForm">
+
+                    <input type="hidden" asp-for="Id" />
+
+                    <!-- Validation Summary -->
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <!-- Title -->
+                    <div class="mb-4">
+                        <label asp-for="Title" class="form-label fw-semibold"></label>
+                        <input asp-for="Title" required class="form-control form-control-lg" placeholder="Enter post title" />
+                        <small id="titleCounter" class="text-muted"></small>
+                        <span asp-validation-for="Title" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="mb-4">
+                        <label asp-for="Content" class="form-label fw-semibold"></label>
+                        <textarea asp-for="Content" required rows="8" class="form-control"
+                            placeholder="Write your post content..."></textarea>
+                        <small id="contentCounter" class="text-muted"></small>
+                        <span asp-validation-for="Content" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" id="submitBtn" class="btn btn-dark px-4">
+                            Publish Post
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        const titleInput = document.querySelector('[name="Title"]');
+        const titleCounter = document.getElementById("titleCounter");
+
+        titleInput.addEventListener("input", () => {
+            titleCounter.textContent = `${titleInput.value.length}/50 characters`;
+        });
+
+        const contentInput = document.querySelector('[name="Content"]');
+        const contentCounter = document.getElementById("contentCounter");
+
+        contentInput.addEventListener("input", () => {
+            contentCounter.textContent = `${contentInput.value.length}/500 characters`;
+        });
+    </script>
+}
