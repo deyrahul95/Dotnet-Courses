@@ -1,4 +1,7 @@
 {
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.tabs.defaultColor": "terminal.ansiMagenta"
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiMagenta",
+    "cSpell.words": [
+        "Udemy"
+    ]
 }

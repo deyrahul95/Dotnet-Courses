@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIPractise", "DIPractise\DI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBlog", "PersonalBlog\PersonalBlog.csproj", "{1E750739-1E4C-4467-AF79-88E1D793AB36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalResolve", "ConditionalResolve\ConditionalResolve.csproj", "{856B1147-69D4-4560-893B-193CFE22E268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{1E750739-1E4C-4467-AF79-88E1D793AB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E750739-1E4C-4467-AF79-88E1D793AB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E750739-1E4C-4467-AF79-88E1D793AB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856B1147-69D4-4560-893B-193CFE22E268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856B1147-69D4-4560-893B-193CFE22E268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856B1147-69D4-4560-893B-193CFE22E268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856B1147-69D4-4560-893B-193CFE22E268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
